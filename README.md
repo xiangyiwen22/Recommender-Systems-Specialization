@@ -18,26 +18,18 @@
 - Con: if perceived as top-n, can result in failure to explore (if top few seem poor);
 
 ## Taxinomy of Recommenders <br>
-1. Recommendation Algorithms
-- Non-Personalized Summary Statistics
-- Content-Based Filtering: Information Filtering, Knowledge-Based
-- Collaborative Filtering: User-User, Item-Item, Dimensionality Reduction
-- Others: Critique / Interview Based Recommendations; Hybrid Techniques
-
-2. Basic model elements: Users, Items, Ratings, and Community (optional) <br>
-User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
-
-3. Non-personalized summary stats
+### Major Recommendation Algorithms
+1. Non-personalized summary stats
 - External community data: best seller, most popular, trending hot;
 - Summary of community ratings: best liked
 - Examples: Zagat restaurant ratings; Billboard music rankings; TripAdvisor hotel ratings;
 
-4. Content-Based Filtering
+2. Content-Based Filtering: Information Filtering, Knowledge-Based
 - User Ratings x Item Attributes => Model (applied to new items via attributes)
 - Examples: Personalized news feeds and Artist or Genre music feeds
 - Alternative: knowledge-based, Item attributes form model of item space - Users navigate/browse that space
 
-5. Personallized Collaborative Filtering <br>
+3. Personallized Collaborative Filtering <br>
 - Use opinions of others to predict/recommend
 - Sparse matrix: User model w/ ratings vs Item model w/ratings
   - Fill in missing values (predict)
@@ -46,11 +38,13 @@ User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
   - User-user: select neighborhood of similar-taste people and use their opinions
   - Item-item: pre-compute similarity among items via ratings, use own ratings to triangulate for recommendations
   - Dimensionality reduction: compress and use taste reprensentation:  yields a lower-d matrix
-
-6. Choose evaluation metrics
-- Accuracy of prediction
-- Usefulness of recommendations: correct, non-onvious and diverse
-- Computational expense
+### Model elements and evaluation metrics 
+- Basic model elements: Users, Items, Ratings, and Community (optional) <br>
+User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
+- Choose evaluation metrics
+  - Accuracy of prediction
+  - Usefulness of recommendations: correct, non-onvious and diverse
+  - Computational expense
 
 
 ### Examples Movielens, Amazon 
