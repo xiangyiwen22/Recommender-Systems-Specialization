@@ -50,6 +50,39 @@ User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
 ### Examples Movielens, Amazon 
 
 # Week 2: Non-Personalized and Stereotype-Based Recommenders
+### Targets
+- New users
+- Online communities around common displays(e.g. Reddit, Slashdot)
+- Applications & media where personalization is impossible
+- Examples: Zaggat survey, billboards Top 200, ‘Popular Now’ on any news site
+
+### Summary stats
+- Score means Popularity, Average Rating and Probability of You Liking
+- Score is computed based on frequency, average and more
+  - Examples: Zaggat survey: Food 29, Decor 26, Service 28; Self-selection bias and increased diversity of raters lead to ratings not matching to expectations
+- Count, average, and distribution together
+  - Examples: Amazon product customer reviews 
+- Averages Can be Misleading; 
+  - Can adjust by summing % who like and adjust by normalizing user ratings
+  - normalization addresses different rating scales
+  – May want to consider credibility of individual raters (history of ratings)
+### Displaying Aggregate Preferences (predict)
+  - Approaches: Average rating / upvote proportion; Net upvotes / # of likes; % >= 4 stars (‘positive’); Full distribution
+  - Goals: To help users decide to buy/read/view the item
+### Ranking Items (recommend)
+Can't rank by score: Too little data (one 5-star rating); Score may be multivariate (histogram); Domain or business considerations; Item is old; Item is ‘unfavored’
+#### Considerations
+- Confidence: How confident are we that this item is good?
+- Risk tolerance: High-risk, high-reward; Conservative recommendation
+- Domain and business considerations: Age and System goals
+
+#### Damped means
+- Items with few rating leads to low confidence
+- assume that, without evidence, everything is average
+- Ratings are evidence of non-averageness
+- k controls strength of evidence required
+
+![equation](http://www.sciweavers.org/upload/Tex2Img_1577216501/render.png)
 
 # Week 3: Content-Based Filtering -- Part I
 
