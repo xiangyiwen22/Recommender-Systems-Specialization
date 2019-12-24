@@ -82,7 +82,7 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Ratings are evidence of non-averageness
 - k controls strength of evidence required
 
-![equation](http://www.sciweavers.org/upload/Tex2Img_1577216501/render.png)
+![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Csum_%7Bu%7D%5E%7B%20%7D%20r_%7Bui%7D%20&plus;%20k%20%5Cmu%7D%7Bn&plus;k%7D)
 
 # Week 3: Content-Based Filtering -- Part I
 
