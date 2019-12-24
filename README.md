@@ -84,6 +84,29 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 
 ![equation](http://latex.codecogs.com/gif.latex?%5Cfrac%7B%5Csum_%7Bu%7D%5E%7B%20%7D%20r_%7Bui%7D%20&plus;%20k%20%5Cmu%7D%7Bn&plus;k%7D)
 
+#### Confidence Intervals 
+- lower bound of statistical confidence interval (95%)
+- Choice of bound affects risk/confidence
+- Lower bound is conservative: be sure it's good; Upper bound is risky: there's a chance of amazing
+- Example: Reddit uses Wilson interval (for binomial) to rank comments
+
+#### Domain Consideration: Time
+
+![equation](http://latex.codecogs.com/png.latex?%5Cfrac%7B%28Up-Down-1%29%5E%7B%5Calpha%7D%7D%7B%28t_%7Bnow%7D-t_%7Bpost%7D%29%5E%5Cgamma%20%7D%5Ctimes%20Penalty)
+- Scoring news stories
+- Net upvotes, polynomially decayed by age
+- Old items scored mostly by vote
+- Multiplied by item penalty terms - incorporate community goals into score
+- Examples: 
+  - Reddit: old stories aren't interesting even if they have many upvotes!
+  - eBay: items have short lifetimes
+#### Reddit example 
+- Log term applied to votes: decrease marginal value of later votes
+- Time is seconds since Reddit epoch
+- Buries items with negative votes
+- Time vs. vote impact independent of age
+- Scores news items, not comments
+
 # Week 3: Content-Based Filtering -- Part I
 
 # Week 4: Content-Based Filtering -- Part II
