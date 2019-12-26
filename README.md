@@ -101,6 +101,7 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
   - Reddit: old stories aren't interesting even if they have many upvotes!
   - eBay: items have short lifetimes
 #### Reddit example 
+![equation](http://latex.codecogs.com/png.latex?%5Clog_%7B10%7Dmax%281%2C%20%5Cleft%20%7C%20Upper-Down%20%5Cright%20%7C%29&plus;%5Cfrac%7Bsign%28Upper-Down%29t_%7Bpost%7D%7D%7B45000%7D)
 - Log term applied to votes: decrease marginal value of later votes
 - Time is seconds since Reddit epoch
 - Buries items with negative votes
