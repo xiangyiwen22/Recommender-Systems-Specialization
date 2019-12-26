@@ -91,7 +91,6 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Example: Reddit uses Wilson interval (for binomial) to rank comments
 
 #### Domain Consideration: Time
-
 ![equation](http://latex.codecogs.com/png.latex?%5Cfrac%7B%28Up-Down-1%29%5E%7B%5Calpha%7D%7D%7B%28t_%7Bnow%7D-t_%7Bpost%7D%29%5E%5Cgamma%20%7D%5Ctimes%20Penalty)
 - Scoring news stories
 - Net upvotes, polynomially decayed by age
@@ -100,7 +99,9 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Examples: 
   - Reddit: old stories aren't interesting even if they have many upvotes!
   - eBay: items have short lifetimes
-#### Reddit example 
+ 
+
+#### Reddit example: Customize scoring to meet business needs 
 ![equation](http://latex.codecogs.com/png.latex?%5Clog_%7B10%7Dmax%281%2C%20%5Cleft%20%7C%20Upper-Down%20%5Cright%20%7C%29&plus;%5Cfrac%7Bsign%28Upper-Down%29t_%7Bpost%7D%7D%7B45000%7D)
 - Log term applied to votes: decrease marginal value of later votes
 - Time is seconds since Reddit epoch
