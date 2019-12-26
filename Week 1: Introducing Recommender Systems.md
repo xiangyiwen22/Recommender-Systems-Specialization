@@ -1,4 +1,3 @@
-# Week 1
 # Week 1: Introducing Recommender Systems
 
 ## Preferences and Ratings<br>
