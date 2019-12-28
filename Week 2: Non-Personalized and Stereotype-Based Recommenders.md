@@ -5,7 +5,7 @@
 - Applications & media where personalization is impossible
 - Examples: Zaggat survey, billboards Top 200, ‘Popular Now’ on any news site
 
-### Summary stats
+## Summary stats
 - Score means Popularity, Average Rating and Probability of You Liking
 - Score is computed based on frequency, average and more
   - Examples: Zaggat survey: Food 29, Decor 26, Service 28; Self-selection bias and increased diversity of raters lead to ratings not matching to expectations
@@ -48,7 +48,6 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Examples: 
   - Reddit: old stories aren't interesting even if they have many upvotes!
   - eBay: items have short lifetimes
- 
 
 #### Reddit example: Customize scoring to meet business needs 
 ![equation](http://latex.codecogs.com/png.latex?%5Clog_%7B10%7Dmax%281%2C%20%5Cleft%20%7C%20Upper-Down%20%5Cright%20%7C%29&plus;%5Cfrac%7Bsign%28Upper-Down%29t_%7Bpost%7D%7D%7B45000%7D)
@@ -57,3 +56,5 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Buries items with negative votes
 - Time vs. vote impact independent of age
 - Scores news items, not comments
+
+## Demographics and Related Approaches
