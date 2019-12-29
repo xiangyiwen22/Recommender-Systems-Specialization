@@ -58,3 +58,30 @@ Can't rank by score: Too little data (one 5-star rating); Score may be multivari
 - Scores news items, not comments
 
 ## Demographics and Related Approaches
+Step 0: Identify available demographics (age, zipcode) and explore correlation(scatterplots, correlations) <br>
+Step 1: Once found relevant demographic, break down summary stats into groups. What's the most popular item for women in age 30-39? <br>
+Step 2: Regression model to predict items based on demographics stats. e.g. Linear regression for rating, logistic regression for purchase. <br>
+Step 3: Make defaults for unknown demographics<br>
+– May simply be overall preferences
+– May reflect expected demographics of newcomers
+– May be modeled separately
+
+Note: If demographics are useful, getting data on users is key <br>
+– Various sources of data, from advertising networks to loyalty club sign‐ups and surveys
+– In some cases, demographics can be “predicted” from data.
+- Can be used for customize products or contents for demographics; Or some products naturally appeal to different groups. 
+
+## Product association recommenders
+- Ephemeral, contextual personalization based on current products, path, links, etc. e.g. People Who Like/Bought/.... <br>
+- Can compute product associations from prior transaction history: Balance between high-probability and increased probability
+- Such recommendations can be targeted for
+additional or replacement purchases
+
+#### Solution 1 Bayer's Law: how much more likely Y is than it was before
+![equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28Y%7CX%29%29%7D%7BP%28Y%29%7D)
+
+#### Solution 2 Association rule mining, non-directional 
+![Equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28Y%7CX%29%29%7D%7BP%28Y%29%7D)
+- Failed at beer and diaper story
+- Can be applied to product and link association
+
