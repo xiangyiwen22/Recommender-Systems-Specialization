@@ -1,6 +1,6 @@
 # Week 3: TFIDF and Content Filtering
 ## Introduction to content based recommenders
-Model items based on attributes; Model 
+Model items according to relevant attributes; Model users' preference
 
 ## TFIDF and content filtering
 
