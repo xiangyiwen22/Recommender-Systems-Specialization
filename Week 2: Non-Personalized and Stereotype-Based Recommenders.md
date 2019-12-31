@@ -78,10 +78,10 @@ Note: If demographics are useful, getting data on users is key <br>
 additional or replacement purchases
 
 #### Solution 1 Bayer's Law: how much more likely Y is than it was before
-![equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28Y%7CX%29%29%7D%7BP%28Y%29%7D)
+![equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28Y%7CX%29%7D%7BP%28Y%29%7D)
 
 #### Solution 2 Association rule mining, non-directional 
-![Equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28Y%7CX%29%29%7D%7BP%28Y%29%7D)
+![Equation](http://latex.codecogs.com/png.latex?%5Cfrac%7BP%28X%20and%20Y%29%7D%7BP%28X%29*P%28Y%29%7D)
 - Failed at beer and diaper story
 - Can be applied to product and link association
 
