@@ -6,5 +6,7 @@ This repo summarizes my learning from Coursera course [Introduction to Recommend
 
 ### [Non-Personalized and Stereotype-Based Recommenders](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/blob/master/Week%202:%20Non-Personalized%20and%20Stereotype-Based%20Recommenders.md)
 
-### [Content-Based Filtering](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/blob/master/Week%203:%20TFIDF%20and%20Content%20Filtering.md)
+### [TFIDF and Content-Based Filtering](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/blob/master/Week%203:%20TFIDF%20and%20Content%20Filtering.md)
+
+### [Some interviews](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/tree/master/Advanced%20Content-Based%20Techniques%20and%20Interfaces)
 
