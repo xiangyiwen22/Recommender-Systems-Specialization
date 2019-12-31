@@ -6,8 +6,7 @@
 - Social media: opinions and feelings 
 
 
-Advanced content based filtering: Deep comprehension of the information conveyed by content crucial to improve the quality of recommender system 
-# semantics 
+Advanced content based filtering: Deep comprehension of the information conveyed by content crucial to improve the quality of recommender system **semantics** 
 - Entity linking: keywords in wiki entries 
 - Distributional hypothesis: meaning of words determined by analyzing their usage (co-occurrence with other words) in large corpora of documents - beer vs wine
   - Word embedding: low dimensional vectors of real numbers. Methods to generate mappings:
