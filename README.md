@@ -10,3 +10,5 @@ This repo summarizes my learning from Coursera course [Introduction to Recommend
 
 ### [Some interviews](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/tree/master/Advanced%20Content-Based%20Techniques%20and%20Interfaces)
 
+### [Assignment 2 Content based filtering in spreadsheet](https://github.com/xiangyiwen22/Non-Personalized-and-Content-Based-Recommendation/tree/master/Assignment2)
+
