@@ -52,13 +52,10 @@ TFIDF = Term Freq * Inverse Document Freq <br>
   - Decay old profile and mix in new (e.g., may decide that profile should be dominated by most recent movies – formula might be 0.95 * old + 0.05 * new, in normalized form)
   
 #### Compute predictions using `cosine` of the angle between the two vectors (profile, item)
-- dot‐product of normalized vectors,
-or if you prefer, the dot product divided by the product of the two lengths
+- dot‐product of normalized vectors, or the dot product divided by the product of the two lengths
 - Cosine ranges between ‐1 and 1 (0 and 1 if all positive values in vectors) – closer to 1 is better.
 - Top‐n, or scale for rating‐scale predictions.
 - Strength: entirely content-based; understandable profile; easy computation; flexibility - can integrate with query-based systems and case based approaches
 - Challenges and limitations 
   - Figure out the right weight and factors e.g. ratings
   - Highly simplified model, cannot handle interdependencies. e.g. I like comedies with violence, and historical documentaries, but not historical comedies or violent documentaries 
-
-## Content based filtering deep dive
