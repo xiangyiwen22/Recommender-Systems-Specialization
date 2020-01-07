@@ -26,13 +26,13 @@ Blank cells mean there is no rating. Do not factor them into your calculations.
 ### Examples
 In order to check your calculations, the values for movie 356 (Forrest Gump) are:
 
-Mean: 2.7
-Rating Count: 10
-% of 4+: 0.3
-Association with Toy Story: 0.412
-Ratings correlation with Toy Story: 0.523
-Mean ratings: female = 3; male = 2.25; diff = 0.75
-Pct >=4: female = 0.5; male =0; diff = 0.5 (I don't get it, I liked that movie!)
+- Mean: 2.7
+- Rating Count: 10
+- % of 4+: 0.3
+- Association with Toy Story: 0.412
+- Ratings correlation with Toy Story: 0.523
+- Mean ratings: female = 3; male = 2.25; diff = 0.75
+- Pct >=4: female = 0.5; male =0; diff = 0.5 (I don't get it, I liked that movie!)
 
 And some overall statistics:
 - Average male rating: 2.906
