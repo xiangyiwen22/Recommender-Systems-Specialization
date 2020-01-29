@@ -37,7 +37,7 @@
 - techniques: 
   - User-user: select neighborhood of similar-taste people and use their opinions
   - Item-item: pre-compute similarity among items via ratings, use own ratings to triangulate for recommendations
-  - Dimensionality reduction: compress and use taste reprensentation:  yields a lower-d matrix
+  - Dimensionality reduction: compress and use taste representation:  yields a lower-d matrix
 ### Model elements and evaluation metrics 
 - Basic model elements: Users, Items, Ratings, and Community (optional) <br>
 User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
