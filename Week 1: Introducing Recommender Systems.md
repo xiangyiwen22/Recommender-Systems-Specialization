@@ -43,7 +43,7 @@
 User (demographics) -------> Ratings <------- Items (properties, genres, etc.)
 - Choose evaluation metrics
   - Accuracy of prediction
-  - Usefulness of recommendations: correct, non-onvious and diverse
+  - Usefulness of recommendations: correct, non-obvious and diverse
   - Computational expense
 
 
