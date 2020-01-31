@@ -23,4 +23,4 @@ Equation 4 (combine 1, 2 and 3) Predictive Score weighted by user similarity bet
 
 How to compute weight? How to describe the 2 users are similar? --> similarity metric by Pearson Correlation <br>
 ![equation](http://latex.codecogs.com/gif.latex?w_%7Buv%7D%20%3D%20%5Cfrac%7B%5Csum_%7Bi%5Cepsilon%20I%7D%28r_%7Bvi%7D-%5Cbar%7Br_%7Bv%7D%7D%29%7D%7B%5Csigma%20_%7Bu%7D%5Csigma%20_%7Bv%7D%7D) <br>
-denominator - product std dev of 2 users ratings <br>
+denominator - product std of 2 users ratings <br>
