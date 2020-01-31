@@ -18,7 +18,7 @@ Equation 3 - Predictive Score weighted by user similarity between user u and use
 By combining equation 1, 2 and 3 ... 
 - v not equal to U
 - limit size of neighborhood to top-*k* neighbors
-- limit similarity of neighborhood to sim > sim_threshold
+- Low-similarity neighbors may add more noise than signal --> limit similarity of neighborhood to sim > sim_threshold 
 - negative correlation - disagree between 2 users, may user *|sim|* or *sim* 
 - Small overlap (only 2 items in common)
 <br>
