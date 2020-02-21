@@ -42,3 +42,15 @@ Given *m=|U|* users and *n=|I|* items:
 - Our tastes are either individually stable or move in sync with each other
 - Our system is scoped within a domain of agreement
  
+# Configuring User-User Collaborative Filtering
+#### Selecting Neighborhoods
+- How many neighbors: Good similarity metric requires the more the better in theory, but  
+#### Scoring Items from Neighborhoods
+#### Normalizing Data
+#### Computing Similarities
+• Algorithms
+• Tweaks
+#### Good Baseline Configuration
+Why do we normalize by subtracting each user's mean rating prior to using their ratings in the collaborative filtering formula? Because different users use the rating scale differently, and we want to account for that.
+
+Compute Similarity 
