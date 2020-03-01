@@ -44,13 +44,43 @@ Given *m=|U|* users and *n=|I|* items:
  
 # Configuring User-User Collaborative Filtering
 #### Selecting Neighborhoods
-- How many neighbors: Good similarity metric requires the more the better in theory, but  
+- Choices of neighbors 
+  - All the neighbors
+  - Threshold similarity or distance
+  - Random neighbors
+  - Top-N neighbors by similarity or distance
+  - Neighbors in a cluster
+- How many neighbors? We want to limit the number of users
+  - In theory, the more the better; If you have a good similarity metric
+  - In practice, noise from dissimilar neighbors decreases usefulness; Low-similarity neighbors may add more noise than signal.
+  - Between 25 and 100 is often used: 30–50 often good for movies 
+  
+  
+  Good similarity metric requires the more the better in theory, but  
 #### Scoring Items from Neighborhoods
-#### Normalizing Data
-#### Computing Similarities
-• Algorithms
-• Tweaks
-#### Good Baseline Configuration
-Why do we normalize by subtracting each user's mean rating prior to using their ratings in the collaborative filtering formula? Because different users use the rating scale differently, and we want to account for that.
+- Common methods: Average; Weighted average; Multiple linear regression
+- Weighted average is common, simple, and works well
+#### Normalization compensates for data problems  
+- Problems: Users rate differently - Some rate high, others low; Some use more of the scale than others. Averaging ignores these differences. 
+- Common normalization methods: 
+  - Subtract user mean rating
+  - Convert to z-score (1 = 1 standard deviation above mean)
+  - Subtract item or item-user mean
+- Must reverse normalization after computing
 
-Compute Similarity 
+#### Computing Similarities
+Why do we normalize by subtracting each user's mean rating prior to using their ratings in the collaborative filtering formula? Because different users use the rating scale differently, and we want to account for that.
+- Algorithm: Pearson correlation
+  - Usually only over ratings in common; User normalization not needed
+  - Spearman rank correlation is Pearson applied to ranks. Hasn't been found to work as well
+- Problems: Suppose users have 1 rating in common -> Pearson correlation is 1 -> Are the users really similar?
+- Tweaks: Weighting similarity
+  - Compute sums in denominator over all of each user’s ratings
+  - Result: users with few ratings in common, but many ratings, will have lower similarity
+  - Similar to significance weighting in older literature
+  - Equivalent to cosine similarity over mean-centered user rating vectors
+#### Good Baseline Configuration to start with
+- Top N neighbors (~30)
+- Weighted averaging
+- User-mean or z-score normalization
+- Cosine similarity over normalized ratings
