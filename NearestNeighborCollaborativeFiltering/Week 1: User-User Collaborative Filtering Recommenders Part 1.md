@@ -84,3 +84,12 @@ Why do we normalize by subtracting each user's mean rating prior to using their 
 - Weighted averaging
 - User-mean or z-score normalization
 - Cosine similarity over normalized ratings
+
+## Influence Limiting and Attack Resistance; Interview with Paul Resnick
+Recognize bad ratings (hard); In reality Recognize bad raters. Trade-off: throw away good raters
+#### (n, c)-Robust
+For all possible distributions of item types and genuine rater types; Any n-sybil attach, expected damage <= c
+#### delibrate cheaters vs honest raters 
+Check rating distrubtions of delibrate cheaters vs honest raters. Distributions matching means honest raters. It requires multiple ratings (~30 items). Has to throw away rater with <3 items. 
+#### How can we reduce the impact of attackers creating fake accounts in a collaborative filtering system?
+Make it harder for attackers to create accounts. Discard data from new users until they have proven themselves. Introduce additional mechanisms to correct or recover from damage in recommendations.
