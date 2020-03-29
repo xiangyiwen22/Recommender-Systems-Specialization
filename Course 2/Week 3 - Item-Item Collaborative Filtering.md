@@ -1,5 +1,7 @@
 # Item to Item Collaborative Filtering
-## Introduction
+
+<center> <h1>Introduction </h1> </center>
+
 ### Motivation 
 - User‐User CF sparsity: When we have millions of items but only thounds of users with small number of ratings, too often there are points where no recommendation can be made. Solutions: “filterbots”, item‐item, and dimensionality reduction.
 - Computational performance: With millions of users (or more), computing allpairs correlations is expensive; Even incremental approaches were expensive; And user profiles could change quickly since users expect the recommendation to be changed frequently –> needed to compute in real time to keep users happy
@@ -32,7 +34,8 @@ Item‐item relationships need to be stable …
 Main limitation/complaint: lower serendipity
 - This is a user/researcher complaint, not fully studied; intuition is clear
 
-## Item-Item Algorithm
+<center> <h1>Item-Item Algorithm </h1> </center>
+
 Summary: Compare `user-user` with `item-item`
 - `user-user`: Average over **users**
 ![useruser](http://latex.codecogs.com/gif.latex?S_%7Bv%2C%20i%7D%20%3D%20%5Cbar%7Br_%7Bv%7D%7D&plus;%20%5Cfrac%7B%5Csum_%7Bv%5Cepsilon%20u%7D%28r_%7Bvi%7D-%5Cbar%7Br_%7Bv%7D%7D%29%5Ccdot%20w_%7Buv%7D%7D%7B%5Csum_%7Bv%5Cepsilon%20u%7Dw_%7Buv%7D%7D)
