@@ -14,7 +14,7 @@ Item similarity is a route to computing a prediction of a user’s item preferen
   
 
 ### Benefits of Item‐Item
-– Good prediction accuracy; Good performance on top‐N predictions
+- Good prediction accuracy; Good performance on top‐N predictions
 - Efficient implementation: At least in cases where |U| >> |I|; Benefits of precomputability
 - Broad applicability and flexibility: As easy to apply to a shopping cart as to a user profile
 
