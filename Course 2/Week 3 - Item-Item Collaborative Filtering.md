@@ -69,7 +69,7 @@ normalize item j rating by subtracting the mean rating of item j ![rj](http://la
 ### Truncating the model
 - Don't need to keep the whole ![E](http://latex.codecogs.com/gif.latex?O%28%5Cleft%20%7C%20I%20%5Cright%20%7C%5E%7B2%7D%29) model
 - Need enough neighbors to find neighbors at score time. Since user hasn’t rated everything, need 𝑀≫𝑘 neighbors per item in model
-- Can drop nonpositiveneighbors
+- Can drop non-positive neighbors
 - Balance memory use with accuracy and coverage: Mild runtime improvements as well
 
 ### Model Building Algorithm
