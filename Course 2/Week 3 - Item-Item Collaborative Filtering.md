@@ -6,9 +6,8 @@
 - User‐User CF sparsity: When we have millions of items but only thounds of users with small number of ratings, too often there are points where no recommendation can be made. Solutions: “filterbots”, item‐item, and dimensionality reduction.
 - Computational performance: With millions of users (or more), computing allpairs correlations is expensive; Even incremental approaches were expensive; And user profiles could change quickly since users expect the recommendation to be changed frequently –> needed to compute in real time to keep users happy
 
-### Item-Item Insights
-Item-Item similarity is fairly stable - this is dependent on **having many more users than items**
-- Average item has many more ratings than an anverage user - Doesn't work well in an application where there is a relatively small number of customers, and many more products. E.g., if you have a fixed customer base of 50,000 people but millions of products you are selling to them. 
+### Item-Item Assumptions
+- Item-Item similarity is fairly stable - this is dependent on **having many more users than items**. Average item has many more ratings than an anverage user - Doesn't work well in an application where there is a relatively small number of customers, and many more products. E.g., if you have a fixed customer base of 50,000 people but millions of products you are selling to them. 
 - Intuitively, items don’t generally change rapidly – at least not in ratings space (special case for time‐bound
 items e.g. Christmas trees and calendars)
 
