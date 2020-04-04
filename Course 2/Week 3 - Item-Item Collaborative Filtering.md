@@ -130,16 +130,12 @@ Item‐item is good for extending directly. Simple parts with well‐defined int
 
 
 <center> <h1> Item‐Item Strength and Weakness </h1> </center>
-- Very Successful in Commercial Applications: Amazon used Item‐Item widely
-  – Claims great success in recommendation
-  – Helps people find products of interest
 
-- Big Disappointment in MovieLens: MovieLens users were switched, and manycomplained
-  – Claimed that recommendations were too obvious
-  – Lack of bold recommendations and predictions
-  
-- Item‐Item is more **conservative** than User-User in its recommendations and predictions; Item‐Item is **faster and more stable** (allowing pre-computation) for domains with many more users than items
-  – Very difficult for item‐item to discover highly different items to recommend, since they were grounded in more data
-  – User‐User by default will elevate items that a close neighbor loves, even without much evidence: If `Bob` think movie `Pets` is good, this is enough evidence for his close neighbor that `Pets` is good
-  – Can be good for shopping, consumption tasks but frustrating for browsing/entertainment
+Item‐Item is more **conservative** than User-User in its recommendations and predictions; Item‐Item is **faster and more stable** (allowing pre-computation) for domains with many more users than items
+- Very difficult for item‐item to discover highly different items to recommend, since they were grounded in more data
+
+– User‐User by default will elevate items that a close neighbor loves, even without much evidence: If `Bob` think movie `Pets` is good, this is enough evidence for his close neighbor that `Pets` is good
+– Can be good for shopping, consumption tasks but frustrating for browsing/entertainment
+  - Very Successful in Commercial Applications: Amazon used Item‐Item widely and claims great success in recommendation; Helps people find products of interest
+  - Big Disappointment in MovieLens: MovieLens users were switched, and many complained that recommendations were too obvious; Lack of bold recommendations and predictions
 
