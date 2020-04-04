@@ -80,3 +80,51 @@ for i in I:
       wij=sim(i,j)
 # clear all but 𝑀 largest values of row wi vector
 ```
+<center> <h1>Item-Item on Unary Data - Implicit Feedback </h1> </center>
+Item-Item not only works on rating data (explicit), but also works on unary data (implicit) such as clicks, plays, and purchases
+### Represented 
+  - as logical (1/0) user-item `purchase` matrix 
+  - purchase count matrix (how many times listened to this song)
+  - ignore 0: 0 may not represent user doesn't like this song, but we just ignore it due to the sparsity of matrix
+  
+### Normalization
+  - Standard mean‐centering not meaningful. But we can normalize user vectors to unit vectors - users who like many items provide less information about any particular pair
+  - Could also consider logging counts
+  
+### Computing similarities 
+  - Consine similarity still works 
+  - Can also use conditional probability, similar to association rules; not symmatrical ![notsymmatrical](http://latex.codecogs.com/gif.latex?P%28r_%7Bi%7D%7Cr_%7Bj%7D%29%5Cneq%20P%28r_%7Bj%7D%7Cr_%7Bi%7D%29) (Deshpande and Karypis paper)
+  
+### Aggregating Scores
+- non‐binary (counts): Weighted average works
+- binary (0/1): sum neighbor similarities; Weighted average doesn't work
+  - fixed neighborhood size means this isn't unbounded <br>
+  ![unbounded](http://latex.codecogs.com/gif.latex?s%28i%2C%20u%29%20%3D%20%5Csum_%7Bj%5Cin%20N%7D%20w_%7Bij%7D)
+  - Truncate `N` to top `k` item. Neighborhood selection unchanged, we still pick the most similar item
+  
+<center> <h1> Extensions </h1> </center>
+Item‐item is good for extending directly. Simple parts with well‐defined interfaces provide a lot of flexibility. It's easy to understand what extensions do. Many interesting recommenders can be built by reconfiguring it
+
+### Example: User Trust
+- Goal: incorporate user trustworthiness into item relatedness computation
+  - User's global reputation, not per‐user trust
+- Solution: weight users by trust before computing item similarities; use trust as coefficient to the normed ratings 
+- High‐trust users have more impact
+- Massa and Avesani. 2004. ‘Trust‐Aware Collaborative Filtering for Recommender Systems’
+
+### Extension: Papers and PageRank
+- Goal: incorporate paper 'importance' into recommender. Recommending research papers: useful to consider items as users who purchase the paper's citations. Same idea can apply to web pages
+- Solution: weight paper user vectors by the paper's PageRank (or HITS hub score)
+- Ekstrand et al., 2010. Automatically Building Research Reading Lists.
+
+### Restructuring: Item‐Item CBF
+- Basic item‐item algorithm structure doesn't care how similarity is computed. So why not use content‐based similarity?
+- Resulting algorithm really isn't a collaborative filter. But it can work pretty well!
+- Example: using Lucene (search engine) to compare documents as neighborhood & similarity function
+
+### Restructuring: Deriving Weights
+- Item‐item compares individual item pairs
+- Alternative approach: infer coefficients from data
+  - Find coefficients ![w](http://latex.codecogs.com/gif.latex?w_%7Bij%7D) that minimize squared error
+  - Learn coefficients with standard machine learning/optimization algorithm (gradient descent)
+
