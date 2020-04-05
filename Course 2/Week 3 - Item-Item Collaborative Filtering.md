@@ -139,3 +139,5 @@ Item‐Item is more **conservative** than User-User in its recommendations and p
   - Very Successful in Commercial Applications: Amazon used Item‐Item widely and claims great success in recommendation; Helps people find products of interest
   - Big Disappointment in MovieLens: MovieLens users were switched, and many complained that recommendations were too obvious; Lack of bold recommendations and predictions
 
+Q: Why did the travel recommender suggest Cleveland so often, even though users did not pick it as a travel destination? <br>
+A: The system used negative correlations, which means it would recommend things that neighbors the user disagrees with frequently disliked, even if most users disliked those items.
