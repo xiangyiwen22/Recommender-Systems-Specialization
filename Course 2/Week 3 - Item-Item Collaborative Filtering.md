@@ -7,6 +7,9 @@
 
 - Computational performance: With millions of users (or more), computing allpairs correlations is expensive; Even incremental approaches were expensive; And user profiles could change quickly since users expect the recommendation to be changed frequently –> needed to compute in real time to keep users happy
 
+Badrul Sarwar, George Karypis, Joseph Konstan, and John Riedl. 2001. Item‐based collaborative filtering recommendation algorithms. In Proceedings of the 10th international conference on World Wide Web (WWW '01). ACM, New York, NY, USA, 285‐295.
+Winner of the 2016 Seoul Test of Time Award [reference](http://wwwconference.org/proceedings/www10/papers/pdf/p519.pdf)
+
 ### Item-Item Assumptions
 - Item-Item similarity is fairly stable - this is dependent on **having many more users than items**. Average item has many more ratings than an anverage user - Doesn't work well in an application where there is a relatively small number of customers, and many more products. E.g., if you have a fixed customer base of 50,000 people but millions of products you are selling to them. 
 - Intuitively, items don’t generally change rapidly – at least not in ratings space (special case for time‐bound
