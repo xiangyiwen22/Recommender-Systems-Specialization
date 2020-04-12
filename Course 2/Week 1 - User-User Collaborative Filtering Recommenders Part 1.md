@@ -1,6 +1,8 @@
 # User-User Collaborative Filtering
 To predict how much a target user will like an target item, the system first generates a neighborhood of other users who have agreed with that user on other items in the past. Then the system computes a weighted, normalized average of what those other users rated the target item. <br> 
 
+An Algorithmic Framwork for Collaborative Filtering by Herlocker, Konstan, Borchers, and Riedl (Proc. SIGIR 1999) [Reference](http://files.grouplens.org/papers/algs.pdf)
+
 Given a set of items *I*, and a set of users *U*, and a sparse matrix of ratings *R*
 
 Equation 1 - Predictive Score for ith item and uth user <br>
