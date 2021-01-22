@@ -13,7 +13,9 @@ There are 5 Courses in this Specialization by [Coursera](https://www.coursera.or
 - Assignment 1 Non-Personalized and Stereotype-Based Recommenders
 - Assignment 2 Content based filtering in spreadsheet
 
-## Course 2 - Nearest Neighbor Collaborative Filtering (In progress)
+## Course 2 - Nearest Neighbor Collaborative Filtering (Finished)
+- User user collaborative filtering
+- Item item collaborative filtering
 
 ## Course 3 - Evaluation and Metrics
 
